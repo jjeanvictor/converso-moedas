@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family:Robotowgh@100;200;300;400;700&display=swap" rel="stylesheet">;
+  <link rel="stylesheet" href="./style.css">
+  <title>Convert Bit</title>
+</head>
+
+<body>
+  <div class="conteiner">
+    <header>
+      <h1>Convert Bit</h1>
+    </header>
+
+    <main>
+      <label>
+        Convert <b>de</b>
+        <select>
+          <option>
+            R$ Real Brasileiro
+          </option>
+        </select>
+      </label>
+
+      <label>
+        Convert <b>para</b>
+        <select>
+          <option>BTC bitcoin</option>
+        </select>
+      </label>
+
+      <label>
+        <b>Valor</b>
+        <input id="input-real" placeholder="R$ 20.000.00">
+      </label>
+
+      <button id="convert-button" type="button">Convert</button>
+
+      <section>
+        <div class="bit-conteiner">
+          <img src="/assets/brazil.png" alt="bandeira-brazil">
+          <p class="bit-name">Real</p>
+          <p class="bit-value" id="real-valeu">R$ 10.000,00</p>
+        </div>
+
+        <!--<img class="arrow" src="./assets/arrow.png" width="100" height="100" alt="seta-baixo"> -->
+
+        <div class="bit-conteiner">
+          <img src="./assets/bit.png" width="30" height="30" alt="bitcoin">
+          <p class="bit-biticoin">Bitcoin</p>
+          <p class="bit-BTC" id="biticoin">BTC 10.000,00</p>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
